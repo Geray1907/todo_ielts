@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.sectionOne {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(wp8986294.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.todo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.contaBoxBorder {
+    border: 2px solid rgb(233, 160, 255);
+    backdrop-filter:blur(50px) brightness(90%);
+}
+
+.contaBox {
+    padding: 60px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter:blur(20px) brightness(90%);
+}
+
+.searchBox {
+    display: flex;
+    border: 1px solid rgb(233, 160, 255);
+    border-radius: 20px;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: Montserrat;
+    color: white;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: rgb(233, 160, 255);
+    cursor: pointer;
+    transition: .2s all;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    color: white;
+}
+
+.iconBox {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.deleteTask, .checkedTask {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(233, 160, 255);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.deleteTask:hover, .checkedTask:hover {
+    opacity: 0.8;
+}
+
+.warningOne {
+    color: white;
+}
+
+li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contaBox p span {
+    color: rgb(233, 160, 255);
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.665);
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.geray {
+    font-size: 20px;
+    color: white;
+}
+
+.gerayspan {
+    color: rgb(233, 160, 255);
+    text-decoration: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 80px;
+    }
+
+    .contaBox {
+        padding: 0;
+        border: none;
+    }
+
+    .contaBoxBorder {
+        padding: 70px 30px;
+    }
+}
+
